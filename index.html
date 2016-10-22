@@ -2,21 +2,30 @@
 <html ng-app="friendsList">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
     <meta charset="utf-8">
-    <title> My First Angular app</title>
+    <title>MyFirstAngular</title>
 </head>
 
 <body ng-controller="mainCtrl">
-  <h1>My Friend</h1>
   <div ng-repeat="friend in friends">
-    <p>{{ friend }} </p>
+    <p> {{ friend }} </p>
   </div>
-  <input ng-model="adder" type="text" name="addFriend" value="">
-    <button ng-click ="friendAdder(adder)" type="button" name="button"></button>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="mainCtrl.js"></script>
+  <input ng-model="name" type="text" name="addFriend" value="">
+  <button ng-click="addFriend(name)" type="button" name="button"></button>
 
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script src="./js/app.js" ></script>
+<script src="./js/mainCtrl.js" charset="utf-8"></script>
 </body>
 </html>
