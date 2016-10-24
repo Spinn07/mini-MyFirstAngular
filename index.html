@@ -8,12 +8,12 @@
 </head>
 
 <body ng-controller="mainCtrl">
-  <div ng-repeat="friend in friends">
+  <div ng-repeat="friend in friends| filter: filterby">
     <p> {{ friend }} </p>
   </div>
-  <input ng-model="name" type="text" name="addFriend" value="">
-  <button ng-click="addFriend(name)" type="button" name="button"></button>
-
+  <input ng-model="name" placeholder="enter name" type="text" name="addFriend" value="" ng-model="filterby">
+  <button ng-click="addFriend(name)" type="button" name="button" ></button>
+  <input type="text" placeholder="search" value="" ng-model="filterby">
 
 
 
